@@ -5,22 +5,27 @@
   "author": "Paul Hammond <paul.hammond@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint src/**/*.js",
+    "prettier": "prettier src/**/* --write",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "dev": "webpack-dev-server --open --mode development"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1",
     "webpack-dev-server": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^5.0.3",
     "babel-loader": "^8.0.5",
+    "eslint": "^5.15.3",
+    "eslint-plugin-react": "^7.12.4",
     "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.16.4",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
   }
